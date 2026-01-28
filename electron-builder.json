@@ -1,0 +1,53 @@
+{
+  "appId": "com.bytelatency.app",
+  "productName": "Byte Latency",
+  "directories": {
+    "output": "release",
+    "buildResources": "build"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "package.json",
+    "node_modules/systeminformation/**/*",
+    "node_modules/discord-rpc/**/*",
+    "public/**/*"
+  ],
+  "extraResources": [
+    {
+      "from": "public",
+      "to": "public",
+      "filter": ["icon.ico"]
+    }
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "public/icon.ico",
+    "artifactName": "${productName}-Setup-${version}.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "deleteAppDataOnUninstall": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Byte Latency",
+    "license": "LICENSE"
+  },
+  "mac": {
+    "target": ["dmg"],
+    "category": "public.app-category.utilities",
+    "icon": "build/icon.icns"
+  },
+  "linux": {
+    "target": ["AppImage", "deb"],
+    "category": "Utility",
+    "icon": "build/icon.png"
+  }
+}

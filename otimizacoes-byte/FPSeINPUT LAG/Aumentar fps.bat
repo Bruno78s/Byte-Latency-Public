@@ -1,0 +1,1 @@
+REG ADD HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl /v win32PrioritySeparation /t REG_DWORD /d 38

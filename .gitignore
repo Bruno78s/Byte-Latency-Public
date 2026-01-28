@@ -1,0 +1,59 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+
+# Cache
+.cache
+.vite
+.eslintcache
+
+# Builds (Vite / Electron)
+dist
+dist-ssr
+build
+release
+out
+app-builds
+*.timestamp-*
+
+# Electron / binários
+*.exe
+*.zip
+*.asar
+*.dll
+*.pak
+
+# Env
+.env
+.env.*
+*.local
+
+# Security
+*.key
+*.pem
+*.crt
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Git interno (evita subrepo acidental)
+**/.git
