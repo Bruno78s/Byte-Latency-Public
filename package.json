@@ -2,7 +2,7 @@
   "name": "bytelatency",
   "version": "1.0.0",
   "description": "",
-  "main": "eslint.config.js",
+  "main": "server/send-email.cjs",
   "directories": {
     "doc": "docs"
   },
