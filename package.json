@@ -54,7 +54,6 @@
     "buffer-from": "^1.1.2",
     "builder-util": "^23.0.6",
     "builder-util-runtime": "^9.5.1",
-    "ByteLatency-tagger": "^1.1.13",
     "bytes": "^3.1.2",
     "cacheable-lookup": "^5.0.4",
     "cacheable-request": "^7.0.4",
